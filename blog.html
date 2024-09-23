@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="sticky top-0 z-10 bg-transparent transition-bg">
+      <nav class="flex justify-evenly bg-[#F9F7F3]">
+        <button
+          onclick="window.location.href='index.html'"
+          class="btn bg-[#B4F461] hover:bg-[#b4f461bb] click:bg-[#b4f461bb]"
+        >
+          Home
+        </button>
+        <div class="flex ml-10">
+          <img src="assets/logo.png" alt="" />
+          <h2 class="lg:font-bold lg:text-2xl">Donate Bangladesh</h2>
+        </div>
+        <div class="flex">
+          <img src="assets/coin.png" alt="" />
+          <h4 id="account-balance" class="font-semibold text-base">5500 BDT</h4>
+        </div>
+      </nav>
+      <!--main div of the two buttons-->
+      <div class="mx-auto flex justify-evenly mt-20">
+        <div>
+          <button
+            class="btn bg-[#fff] hover:bg-[#b4f461bb] active:bg-[#b4f461bb] click:bg-[#B4F461]"
+          >
+            Donation
+          </button>
+        </div>
+        <div class="lg:ml-40 flex">
+          <button
+            class="btn bg-[#fff] hover:bg-[#b4f461bb] active:bg-[#b4f461bb]"
+          >
+            History
+          </button>
+        </div>
+      </div>
+      <div class="">
+        <h1 class="text-5xl font-bold mb-10">Important FAQ</h1>
+        <img src="assets/questionMark.jpg" alt="" />
+      </div>
+      <!--accordion-->
+      <div class="collapse bg-base-200">
+        <input type="radio" name="my-accordion-1" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          What is the Document Object Model(DOM)?
+        </div>
+        <div class="collapse-content">
+          <p>
+            It defines the logical structure of documents and the way a document
+            is accessed and manipulated.
+          </p>
+        </div>
+      </div>
+      <div class="collapse bg-base-200">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title text-xl font-medium">
+          How do you select an element from DOM
+        </div>
+        <div class="collapse-content">
+          <p>
+            The getElementById() method of the Document interface returns an
+            Element object representing the element whose id property matches
+            the specified string.
+          </p>
+        </div>
+      </div>
+      <div class="collapse bg-base-200">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title text-xl font-medium">
+          What is event delegation in the context of the DOM,and why is it
+          useful?
+        </div>
+        <div class="collapse-content">
+          <p>
+            The process of using event propagation (bubbling) to handle events
+            at a higher level in the DOM than the element on which the event
+            originated.
+          </p>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
