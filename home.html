@@ -12,29 +12,143 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header class="static">
+    <header class="sticky">
       <nav class="flex justify-evenly bg-[#F9F7F3]">
         <button
           class="btn bg-[#B4F461] hover:bg-[#b4f461bb] click:bg-[#b4f461bb]"
         >
-          Button
+          Blog
         </button>
-        <div class="flex">
+        <div class="flex ml-10">
           <img src="assets/logo.png" alt="" />
-          <h2 class="font-bold lg:text-2xl">Donate Bangladesh</h2>
+          <h2 class="lg:font-bold lg:text-2xl">Donate Bangladesh</h2>
         </div>
         <div class="flex">
           <img src="assets/coin.png" alt="" />
-          <h4 id="account-balance" class="font-semibold text-base">5500BDT</h4>
+          <h4 id="account-balance" class="font-semibold text-base">5500 BDT</h4>
         </div>
       </nav>
-      <div class="ml-80 flex mt-40">
-        <button
-          class="btn bg-[#B4F461] hover:bg-[#b4f461bb] active:bg-[#b4f461bb]"
-        >
-          Donation
-        </button>
+      <!--main div of the two buttons-->
+      <div class="mx-auto flex justify-evenly mt-20">
+        <div>
+          <button
+            class="btn bg-[#fff] hover:bg-[#b4f461bb] active:bg-[#b4f461bb] click:bg-[#B4F461]"
+          >
+            Donation
+          </button>
+        </div>
+        <div class="lg:ml-40 flex">
+          <button
+            class="btn bg-[#fff] hover:bg-[#b4f461bb] active:bg-[#b4f461bb]"
+          >
+            History
+          </button>
+        </div>
       </div>
     </header>
+    <main>
+      <!--first card-->
+      <div class="card card-side bg-base-100 shadow-xl mt-20">
+        <figure>
+          <img src="assets/noakhali.png" alt="Movie" />
+        </figure>
+        <div class="card-body">
+          <div class="flex">
+            <img class="w-10" src="assets/coin.png" alt="">
+          <button class="btn">50000 BDT</button>
+          </div>
+          <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+          <p>
+            The recent floods in Noakhali have caused significant damage to<br />
+            homes infrastructure. Your donation will help provide essential<br />
+            supplies and to those affected by this disaster. Every
+            contribution,<br />
+            big or small, makes difference. Please join us in supporting the
+            relief<br />
+            efforts and making a positive impact on the lives of those in need.
+          </p>
+          <input
+            type="text"
+            placeholder="Write Your Donation Amount"
+            class="input input-bordered input-lg w-full max-w-xs"
+          />
+          <div class="card-actions">
+            <button
+              class="btn bg-[#B4F461] hover:bg-[#b4f461bb] click:bg-[#b4f461bb] lg:mr-80"
+            >
+              Donate Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--second card-->
+      <div class="card card-side bg-base-100 shadow-xl mt-20"><figure>
+        <img src="assets/feni.png" alt="Movie" />
+      </figure>
+      <div class="card-body">
+        <div class="flex">
+          <img class="w-10" src="assets/coin.png" alt="">
+        <button class="btn">50000 BDT</button>
+        </div>
+        <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+        <p>
+          The recent floods in Noakhali have caused significant damage to<br />
+          homes infrastructure. Your donation will help provide essential<br />
+          supplies and to those affected by this disaster. Every
+          contribution,<br />
+          big or small, makes difference. Please join us in supporting the
+          relief<br />
+          efforts and making a positive impact on the lives of those in need.
+        </p>
+        <input
+          type="text"
+          placeholder="Write Your Donation Amount"
+          class="input input-bordered input-lg w-full max-w-xs"
+        />
+        <div class="card-actions">
+          <button
+            class="btn bg-[#B4F461] hover:bg-[#b4f461bb] click:bg-[#b4f461bb] lg:mr-80"
+          >
+            Donate Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!--third card-->  
+      <div class="card card-side bg-base-100 shadow-xl mt-20"><figure>
+        <img src="assets/quota-protest.png" alt="Movie" />
+      </figure>
+      <div class="card-body">
+        <div class="flex">
+          <img class="w-10" src="assets/coin.png" alt="">
+        <button class="btn">50000 BDT</button>
+        </div>
+        <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+        <p>
+          The recent floods in Noakhali have caused significant damage to<br />
+          homes infrastructure. Your donation will help provide essential<br />
+          supplies and to those affected by this disaster. Every
+          contribution,<br />
+          big or small, makes difference. Please join us in supporting the
+          relief<br />
+          efforts and making a positive impact on the lives of those in need.
+        </p>
+        <input
+          type="text"
+          placeholder="Write Your Donation Amount"
+          class="input input-bordered input-lg w-full max-w-xs"
+        />
+        <div class="card-actions">
+          <button
+            class="btn bg-[#B4F461] hover:bg-[#b4f461bb] click:bg-[#b4f461bb] lg:mr-80"
+          >
+            Donate Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </main>
   </body>
 </html>
