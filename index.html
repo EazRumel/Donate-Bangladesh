@@ -26,28 +26,38 @@
         </div>
         <div class="flex">
           <img src="assets/coin.png" alt="" />
-          <h4 id="account-balance" class="font-semibold text-base">5500 BDT</h4>
+          <h4 id="account-balance" class="font-semibold text-base">5500</h4>
         </div>
       </nav>
       <!--main div of the two buttons-->
       <div class="mx-auto flex justify-evenly mt-20">
         <div>
           <button
-            class="btn bg-[#fff] hover:bg-[#b4f461bb] active:bg-[#b4f461bb] click:bg-[#B4F461]"
+            id="donation-btn"
+            class="btn bg-[#fff] hover:bg-[#b4f461bb] active:bg-[#b4f461bb] ]"
           >
             Donation
           </button>
         </div>
         <div class="lg:ml-40 flex">
           <button
+            id="history-btn"
             class="btn bg-[#fff] hover:bg-[#b4f461bb] active:bg-[#b4f461bb]"
           >
             History
           </button>
+
+          <!--show history-->
         </div>
       </div>
+      <hr />
+      <div id="history-section" class="mt-10 hidden">
+        <!--show history div-->
+        <h1 class="font-bold text-5xl text-center">Donation History</h1>
+        <div id="history-container"></div>
+      </div>
     </header>
-    <main>
+    <main id="main-section">
       <!--first card-->
       <div class="card card-side bg-base-100 shadow-xl mt-20">
         <figure>
@@ -56,7 +66,7 @@
         <div class="card-body">
           <div class="flex">
             <img class="w-10" src="assets/coin.png" alt="" />
-            <button class="btn">50000 BDT</button>
+            <button id="noakhali-balance" class="btn">50000</button>
           </div>
           <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
           <p class="text-gray-500">
@@ -77,12 +87,18 @@
             <!--modal button-->
 
             <label
+              id="noakhali-donation-btn"
               for="my_modal_6"
               class="btn bg-[#B4F461] hover:bg-[#b4f461bb] lg:px-40"
               >Donate Now</label
             >
 
-            <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+            <input
+              id="noakhali-donation"
+              type="checkbox"
+              id="my_modal_6"
+              class="modal-toggle"
+            />
             <div class="modal" role="dialog">
               <div class="modal-box">
                 <h3 class="font-bold text-2xl">Congrats!</h3>
@@ -205,5 +221,9 @@
         </div>
       </div>
     </main>
+    <script src="js/function.js"></script>
+    <script src="js/featuring.js"></script>
+    <script src="js/addMoney.js"></script>
   </body>
 </html>
+<hr />
