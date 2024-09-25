@@ -1,15 +1,15 @@
-document.getElementById('noakhali-donation-btn').addEventListener('click',function(){
+document.getElementById('feni-donation-btn').addEventListener('click',function(){
   console.log('added money')
-  const addMoney = getInputById('noakhali-donation-input');
+  const addMoney = getInputById('feni-donation-input');
 console.log(addMoney)
 if(isNaN(addMoney) || addMoney < 0){
   alert('Sorry,Could not endorse your donation');
   return;
 }
 if(typeof addMoney === 'number'){
-  const balance = getTextById('noakhali-balance')
+  const balance = getTextById('feni-balance')
   const newBalance = addMoney + balance;
-  document.getElementById('noakhali-balance').innerText = newBalance;
+  document.getElementById('feni-balance').innerText = newBalance;
   const accountBalance = getTextById('account-balance');
   const totalAccountBalance = accountBalance - addMoney
   if(totalAccountBalance < 0){
